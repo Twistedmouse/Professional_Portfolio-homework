@@ -61,7 +61,7 @@ ul{
     color: rgb(25, 41, 41);
 }
 
-#links li:hover{
+#links li a:hover{
     color: ghostwhite;
 }
 
@@ -84,6 +84,10 @@ ul{
     bottom: 170px;
     right: 100px;
 }
+.navToggle-lable:hover{
+    color: ghostwhite;
+}
+
 .navToggle-lable span::before,
 .navToggle-lable span::after {
     content: '';
@@ -120,7 +124,7 @@ h2{
 /* postions the work heading */
 h2.work{
     position: relative;
-    left: 220px;
+    left: 120px;
 }
 
 h4{
@@ -180,6 +184,7 @@ article p{
     display: flex;
     justify-content: center;
     margin-right: 400px;
+    margin-left: 200px;
 }
 
 /* large image is container for the bigger imaged project which is a placeholder for my most proud project in the future */
@@ -189,7 +194,7 @@ article p{
     height: 200px;
     right: 175px;
     margin-bottom: 300px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 /* largeimage img controls the image its self */
 #largeImage img{
@@ -199,7 +204,7 @@ article p{
     border-style: ridge;
     margin-left: 100px;
 }
-#largeImage:hover{
+#largeImage img:hover{
     opacity: 80%;
 }
 }
@@ -222,6 +227,10 @@ article p{
     margin-left: 30px;
     margin-right: 30px;
 }
+.container img:hover{
+    opacity: 80%;
+}
+
 
 /* footer with links and images */
 footer{
