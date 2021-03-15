@@ -1,30 +1,96 @@
 :root{
-    background-color: rgb(138, 185, 185);
+    background-position: center;
+    background-size: 80%;
+    background-image:url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2134&q=80);
+    --headerCol: #a5ead5;
+}
+/* fixed header to add a lil style */
+header{
+    position: fixed;
+    width:100%;
+    z-index: 999;
+    text-align: center;
+    background: rgb(0,25,51);
+    background: linear-gradient(90deg, rgba(0,25,51,1) 18%, rgba(165,252,235,1) 41%, rgba(141,0,255,1) 86%);
+    /* background-color: var(--headerCol); */
+    /* border-bottom: outset; */
+    margin-top: -200px;
+    color: rgb(34, 56, 56);
 }
 
+body{
+    margin: 0px;
+    margin-top: 200px;
+}
+/* to remove any markers or points from my page if needed later i will use in a more apropreite way */
+ul{
+    list-style-type: none;
+}
+/* links and link li are my navbar under the header */
 #links{
+    position: fixed;
     display: flex;
-    justify-content: space-around;
+    z-index: 999;
+    justify-content: flex-end;
     width: 100%;
     text-align: center;
     margin: 70px;
 }
-
+/* the look of the nav bar */
 #links li{
-    display: inline-block;
-    background-color: ghostwhite;
-    width: 80px;
-    height: 30px;
-    border-radius: 9px;
+    display: none;
+    position: relative;
+    left: 200px;
+    z-index: 999;
+    background-color: #8d00ff;
+    width: 110px;
+    height: 60px;
+    border-bottom-left-radius: 5px;
     font-size: 18px;
+    font-weight: bolder;
+    margin-right: 150px;
+    margin-top: -190px;
+    margin-left: -8.5em;
+    
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    margin-left: 200px;
+#links li a{
+    position: relative;
+    z-index: 999;
+    top: 13px;
+    color: rgb(25, 41, 41);
 }
 
+#links li:hover{
+    color: ghostwhite;
+}
+
+.navToggle:checked ~ #links li {
+    display: inline-block;
+}
+
+.navToggle{
+    display: none;
+    z-index: 1000;
+    position: relative;
+    float: right;
+    bottom: 170px;
+    right: 130px;
+}
+.navToggle-lable span{
+    z-index: 999;
+    position: relative;
+    float: right;
+    bottom: 170px;
+    right: 100px;
+}
+.navToggle-lable span::before,
+.navToggle-lable span::after {
+    content: '';
+    position: absolute;
+}
+
+/* main section contains my about me, header and photo */
 main{
     display: flex;
     margin: 5px 100px;
@@ -34,11 +100,10 @@ main{
     width: 1600px;
 }
 
+/* heading sections grouped up to keep better track of */
 h1{
-    text-align: center;
-    background-color: firebrick;
-    border: yellow;
-    border-style: outset;
+    position: relative;
+    top: 0.2em;
 }
 
 h2{
@@ -48,27 +113,30 @@ h2{
     width: fit-content;
     height: fit-content;
     border-radius: 5px;
-    background-color: burlywood;
+    background-color: var(--headerCol);
     font-size: 28px;
+    background: linear-gradient(180deg, rgb(139, 235, 215) 60%, rgba(141,0,255,1) 150%);
+}
+/* postions the work heading */
+h2.work{
+    position: relative;
+    left: 220px;
 }
 
 h4{
+    position: relative;
+
     font-size: 20px;
     color: rgb(124, 172, 172);
 }
 
-.work{
-    margin: 5px 90px;
-    padding-left: 0px 80px;
-    margin-top: -10px;
-    right: 90px; 
-}
-
+/* positions about me section */
 .about-me{
     position: relative;
     left: 130px;   
 }
 
+/* article postions my paragraph and photo */
 article{
     position: relative;
     display: flex;
@@ -76,6 +144,7 @@ article{
     width: fit-content;
 }
 
+/* article p hold my paragraph for my about me */
 article p{
     background-color: darkseagreen;
     box-sizing: content-box;
@@ -87,6 +156,7 @@ article p{
     margin-left: 130px;
 }
 
+/* photo of me */
 .isme{
     height: 400px;
     width: 300px;
@@ -94,24 +164,46 @@ article p{
     margin-left: 60px;
     border: ghostwhite;
     border-style: dotted;
-    
+
 }
 
+/* work section mostly for positioning */
+.work{
+    margin: 5px 90px;
+    padding-left: 0px 80px;
+    margin-top: -10px;
+    right: 90px; 
+}
+
+/* class for my work section mostly to center. its a class incase i need to use this again later in the page*/
+.app-ls{
+    display: flex;
+    justify-content: center;
+    margin-right: 400px;
+}
+
+/* large image is container for the bigger imaged project which is a placeholder for my most proud project in the future */
 #largeImage{
     position: relative;
     width: 700px;
     height: 200px;
     right: 175px;
     margin-bottom: 300px;
+    margin-left: 200px;
 }
+/* largeimage img controls the image its self */
 #largeImage img{
     width: 100%;
     height: 400px;
     border: ghostwhite;
     border-style: ridge;
-    
+    margin-left: 100px;
 }
-
+#largeImage:hover{
+    opacity: 80%;
+}
+}
+/* image container for my imgs in flex */
 .container{
     display: flex; 
     flex-direction: row;
@@ -119,17 +211,19 @@ article p{
     justify-content: space-between;
     height: 500px;
     width: 900px;
-    margin: 80px;
 }
-
+ /* the images inside the flex container */
 .container img{
     width: 300px;
     height: auto;
     border: ghostwhite;
     border-style: ridge;
-    margin: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
+/* footer with links and images */
 footer{
     display: flex;
     justify-content: space-around;
@@ -138,12 +232,12 @@ footer{
     width: 100%;
     height: 80px;
 }
-
 footer img{
     position: relative;
     width: 60px;
     height: 60px;
     top: 10px;
+    left: 80px;
     margin-left: 240px;
 }
 
