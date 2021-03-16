@@ -26,6 +26,11 @@ body{
 ul{
     list-style-type: none;
 }
+
+/* #navBar{
+    position: fixed;
+} */
+
 /* links and link li are my navbar under the header */
 #links{
     position: fixed;
@@ -76,22 +81,41 @@ ul{
     float: right;
     bottom: 170px;
     right: 130px;
+    height: 50px;
+    width: 50px;
 }
 
+/* the middle of my hamber also linked to the checkbox parent */
 .navToggle-lable span{
     z-index: 999;
-    position: relative;
-    float: right;
-    bottom: 170px;
-    right: 100px;
+    position: fixed;
+    bottom: 923px;
+    right: 275px;
+    color: ghostwhite;
+    font-weight: bolder;
+    font-family: fantasy;
 }
 .navToggle-lable:hover{
     color: ghostwhite;
 }
-
+ 
+/* the two extra lines that make my hamburger menu */
 .navToggle-lable span::before,
 .navToggle-lable span::after {
-    content: '';
-    position: absolute;
+    display: block;
+    background-color: ghostwhite;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: fixed;
+    content: '';   
 }
 
+.navToggle-lable span:hover{
+    filter: drop-shadow(2px 4px 8px);
+}
+
+.navToggle-lable span:active{
+    transform: rotate(45deg)
+}
+   
