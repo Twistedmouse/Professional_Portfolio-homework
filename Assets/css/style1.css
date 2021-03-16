@@ -1,0 +1,97 @@
+:root{
+    background-position: center;
+    background-size: 80%;
+    background-image:url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2134&q=80);
+    --headerCol: #a5ead5;
+}
+/* fixed header to add a lil style */
+header{
+    position: fixed;
+    width:100%;
+    z-index: 999;
+    text-align: center;
+    background: rgb(0,25,51);
+    background: linear-gradient(90deg, rgba(0,25,51,1) 18%, rgba(165,252,235,1) 41%, rgba(141,0,255,1) 86%);
+    /* background-color: var(--headerCol); */
+    /* border-bottom: outset; */
+    margin-top: -200px;
+    color: rgb(34, 56, 56);
+}
+
+body{
+    margin: 0px;
+    margin-top: 200px;
+}
+/* to remove any markers or points from my page if needed later i will use in a more apropreite way */
+ul{
+    list-style-type: none;
+}
+/* links and link li are my navbar under the header */
+#links{
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+    margin: 70px;
+}
+/* the look of the nav bar */
+#links li{
+    display: none;
+    position: relative;
+    left: 200px;
+    z-index: 999;
+    background-color: #8d00ff;
+    width: 110px;
+    height: 60px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 150px;
+    margin-top: -190px;
+    margin-left: -8.5em;
+    
+}
+
+#links li a{
+    position: relative;
+    z-index: 999;
+    top: 13px;
+    color: rgb(25, 41, 41);
+}
+
+#links li a:hover{
+    color: ghostwhite;
+}
+
+.navToggle:checked ~ #links li {
+    display: inline-block;
+}
+
+.navToggle{
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    float: right;
+    bottom: 170px;
+    right: 130px;
+}
+
+.navToggle-lable span{
+    z-index: 999;
+    position: relative;
+    float: right;
+    bottom: 170px;
+    right: 100px;
+}
+.navToggle-lable:hover{
+    color: ghostwhite;
+}
+
+.navToggle-lable span::before,
+.navToggle-lable span::after {
+    content: '';
+    position: absolute;
+}
+
