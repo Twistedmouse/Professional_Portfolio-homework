@@ -1,5 +1,5 @@
 /* work section mostly for positioning */
-.work{
+#work{
     margin: 5px 90px;
     padding-left: 0px 80px;
     margin-top: -10px;
@@ -84,17 +84,18 @@ footer img:hover{
     filter: invert(1);
 }
 
- /* @media screen and (min-width: 600px) {
-    :root{
-        display
-        background-color: darkkhaki;
-        width: 30%;
+/* media queries */
+ @media screen and (max-width: 768px) {
+    main{
+        width: 50%;
     }
 } 
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 601px) and (max-width: 980px) {
     :root{
-        background-color: darkorange;
         width: 50%; 
     }
 }  */
+
+/* moobile width 480px
+   tablet 768px */
