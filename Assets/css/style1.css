@@ -86,7 +86,7 @@ ul{
     width: 50px;
 }
 
-/* the middle of my hamber also linked to the checkbox parent */
+/* the middle of my hamburger also linked to the checkbox parent */
 .navToggle-lable span{
     z-index: 999;
     position: fixed;
