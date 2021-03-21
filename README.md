@@ -81,12 +81,12 @@ style2 was for my main section with my about me and photo of myself.<br>
 style3 was for my work section with my app images and then followed by the footer of the page.<br>
 </p>
 
-![](Assets\screenshots\cssx3.jpg)
+![](Assets/screenshots/cssx3.jpg)
 
 <p>once I was happy with my CSS I changed all my placeholders to make the page abit more exciting: </p>
 
-![](Assets\screenshots\htmlFinal.jpg)
-![](Assets\screenshots\htmlFinal2.jpg)
+![](Assets/screenshots/htmlFinal.jpg)
+![](Assets/screenshots/htmlFinal2.jpg)
 
 I was happy with my layout at this time but started thinking that the resizing of the page my break it but i thought it was fine.(it was not fine.)<br>
 I felt like I already did to much work to start again so I stuck to my plan.<br>
@@ -98,13 +98,13 @@ footer img:hover{
 }
 ```
 
-![](Assets\screenshots\hoverInvert.jpg)
+![](Assets/screenshots/hoverInvert.jpg)
 
 <p>I also wanted to make a hamburger drop menu for my nav this was alot more difficault then I thought but I was really proud of my resault and I was happy with how easy it was the scroll to each part of the page.</p>
 
-![](Assets\screenshots\nav.jpg)
-![](Assets\screenshots\navhover.jpg)
-![](Assets\screenshots\navexpand.jpg)
+![](Assets/screenshots/nav.jpg)
+![](Assets/screenshots/navhover.jpg)
+![](Assets/screenshots/navexpand.jpg)
 
 ```
 /* links and link li are my navbar under the header */
@@ -197,7 +197,7 @@ footer img:hover{
 ```
 <p>Next was linking my project images:</p>
 
- ![](Assets\screenshots\imglinks.jpg)
+ ![](Assets/screenshots/imglinks.jpg)
 Then I added a hover effect:
 ```
 #largeImage img:hover{
@@ -214,22 +214,22 @@ Then I added a hover effect:
 
 ```
 
-![](Assets\screenshots\hoverlargeimg.jpg)
+![](Assets/screenshots/hoverlargeimg.jpg)
 <p> and clicking this link will link to a new page. </p>
 
 <p> Once all the style elements were done it was time to work on the media queries </p>
 I found working woth the media queries at first it was simple and all made sence. but as I tried scaling smaller and smaller i noticed it would break very easy I beleive this is due to all the different postion elements i was using or more the relative poistioning I was using for most my elements.<br>
 
-![](Assets\screenshots\scaledown.jpg)
+![](Assets/screenshots/scaledown.jpg)
 
 my first media querie worked very well it was responsive and neat. but because i had to move everything indavidually it made this part very time consumming and moving some elments moved others so there became alot of back and forth. <br>
 <p> Even my navbar was being responsive.</p>
 
-![](Assets\screenshots\responsiveNav.jpg)
+![](Assets/screenshots/responsiveNav.jpg)
 
 <p> And even on the smaller scale for mobile it was being responsive. But then i saved came back later on and i had this huge open space. I beleive its the postioning of my main section but changing it seems to mess up the layout alot I was running out of time so i thought at this time ill have to accept this issue and learn from it.</p>
 
-![](Assets\screenshots\responsiveSmall.jpg)
+![](Assets/screenshots/responsiveSmall.jpg)
 
 <p> Overall I am very happy with the style of my page and I'v learnt alot from the project.</p>
 
