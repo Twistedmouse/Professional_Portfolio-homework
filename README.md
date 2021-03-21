@@ -241,4 +241,6 @@ my first media querie worked very well it was responsive and neat. but because i
     <ls>First of all i would change the layout of my page. to me my layout looks abit messy and not very proffetional now. <br> </ls>
     <ls> <br>next time around i would use more flex elements it would make it easyer to rescale in the long run and having more of a grid layout to a page will help with responsivness. <br></ls>
     <ls><br> I would use my time better next time around too. the navbar took me far longer then i thought and having so many elements to make it made it hard too rescale and made the responsiveness rather hard. I'v already got an idea to use less relative postioning as well.<br>  </ls>
+    <ls> <br> i would also like to take more time in the media queries and fix the width in the main and repostion everything around it. But at this point i need to move onto my next task.<br></ls>
+    <ls> <br> this won't be the last time you hear from me. 
 </ul>
