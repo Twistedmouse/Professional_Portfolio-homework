@@ -85,7 +85,7 @@ style3 was for my work section with my app images and then followed by the foote
 
 <p>once I was happy with my CSS I changed all my placeholders to make the page abit more exxciting: </p>
 
-![](Assets\screenshots\htmlFinal.jpg)
+![ScreenShot](Assets\screenshots\htmlFinal.jpg)
 ![](Assets\screenshots\htmlFinal2.jpg)
 
 I was happy with my layout at this time but started thinking that the resizing of the page my break it but i thought it was fine.(it was not fine.)<br>
