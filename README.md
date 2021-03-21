@@ -72,8 +72,8 @@ I thought mostly using realative postioning would be a good idea to move objects
 
 <p>I then moved onto my CSS to work out the layout of my page. I made a very basic design with gross loud colors and some intersting imgaes as place holders:<br></p> 
 
-![](Assets\screenshots\htmlEarlyShot.jpg)
-![](Assets\screenshots\htmlEarlyShot2.jpg)
+![](Assets/screenshots/htmlEarlyShot.jpg)
+![](Assets/screenshots/htmlEarlyShot2.jpg)
 
 As my CSS got longer i split it into 3 style sheets for easier readabillity:<br>
 <p>style1 was for my top part of page my header and navbar<br>
@@ -83,9 +83,9 @@ style3 was for my work section with my app images and then followed by the foote
 
 ![](Assets\screenshots\cssx3.jpg)
 
-<p>once I was happy with my CSS I changed all my placeholders to make the page abit more exxciting: </p>
+<p>once I was happy with my CSS I changed all my placeholders to make the page abit more exciting: </p>
 
-![ScreenShot](Assets\screenshots\htmlFinal.jpg)
+![](Assets\screenshots\htmlFinal.jpg)
 ![](Assets\screenshots\htmlFinal2.jpg)
 
 I was happy with my layout at this time but started thinking that the resizing of the page my break it but i thought it was fine.(it was not fine.)<br>
