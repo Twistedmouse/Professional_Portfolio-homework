@@ -110,11 +110,16 @@
         left: 500px;
         top: 80px;
     }
+    span{
+        width: 100px;
+        
+    }
 
     main{
         display: block;
         margin-left: 5px;
         margin-right:0px;
+        /* width: 100vw; */
     }
     
     h2#about-me{

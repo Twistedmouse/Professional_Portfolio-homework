@@ -50,7 +50,6 @@
     opacity: 80%;
     box-shadow: 0px 10px 15px ghostwhite;
 }
-}
 /* image container for my imgs in flex */
 .container{
     display: flex; 
