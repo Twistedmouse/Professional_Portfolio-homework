@@ -13,6 +13,21 @@
     margin-right: 400px;
     margin-left: 200px;
 }
+/* titles for the apps */
+#refractor{
+    position: absolute;
+    color: rgba(68, 68, 71, 0.802);
+    font-weight: bolder;
+    bottom:-120px;
+    left: 630px;
+}
+#scratch{
+    position: absolute;
+    font-weight: bolder;
+    color:  rgba(68, 68, 71, 0.802);
+    bottom:-450px;
+    left: 660px;
+}
 
 /* large image is container for the bigger imaged project which is a placeholder for my most proud project in the future */
 #largeImage{

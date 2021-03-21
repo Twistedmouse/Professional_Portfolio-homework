@@ -1,5 +1,5 @@
 /* media queries */
-@media screen and (max-width: 1200px) {
+@media screen and  (min-width: 1017px) and (max-width: 1880px) {
     /* mostly just to size the background */
     :root{
         background-size: 150%;
@@ -25,6 +25,7 @@
     main{
         display: block;
         width: 300px;
+        margin-left: 30%;
     }
     /* my paragraph above .isme img */
     article{
@@ -53,6 +54,25 @@
         position: relative;
         left: 550px;
     }
+    /* title for largeImg */
+    #refractor{
+        position: absolute;
+        color: rgba(68, 68, 71, 0.802);
+        font-weight: bolder;
+        bottom:-1150px;
+        left: 350px;
+        width: 50vw;
+        margin-left: 15%;
+    }
+    /* title for scratch game */
+    #scratch{
+        position: absolute;
+        font-weight: bolder;
+        color:  rgba(68, 68, 71, 0.802);
+        bottom:-1480px;
+        left: 360px;
+        margin-left: 15%;
+    }
     /* contact postion */
     #contact{
        position: relative;
@@ -68,18 +88,18 @@
     
 
 } 
-/* rescale for smaller devices eg phones */
-@media screen and (min-width: 480px) and (max-width: 800px) {
+/* rescale for smaller devices eg phones (rescale isnt as responsive as i would have liked i think this may be due to my postioning */
+@media screen and (min-width: 480px) and (max-width: 1016px) {
     :root{
         background-size: 300%;
     }
     
     header{
-        width: 100vw;
+        width: 25%;
     }
    
     #links{
-        right:300px;
+        left:500px;
         margin-top: 105px;
     }
     #links :nth-child(1){
@@ -87,7 +107,7 @@
     }
     .navToggle-lable span{
         margin-right: 0px;
-        right: 500px;
+        left: 500px;
         top: 80px;
     }
 
@@ -106,8 +126,11 @@
 
     article{
         position: relative;
-        right: 160px;
+        right: 140px;
         width: 150%;
+     }
+     article p{
+         width: 15%;
      }
     
     .isme{
@@ -133,7 +156,9 @@
         margin: 0px;
         right: 70px;
     }
-
+    footer{
+        width: 100%;
+    }
     #contact{
        position: relative;
         bottom: -600px;
